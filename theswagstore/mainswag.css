@@ -1,0 +1,66 @@
+@font-face {
+    font-family: font;
+    src: url(LittleBird.ttf);
+}
+body{
+	background: url(bak2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+	    font-family: arial;
+    font-size: 56px;
+    font-weight: normal;
+    margin: auto;
+    /* display: block; */
+    text-align: center;
+    color: white;
+    margin-top: 13%;
+
+}
+
+#date p{
+	       font-size: 21px;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.4;
+        margin-right: 2%;
+
+}
+
+#respon p{
+	  font-size: 59px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: lighter;
+    color: white;
+    position: relative;
+    bottom: 205px;
+}
+
+#respon{
+	max-width: 54%;
+    margin: auto;
+    margin-top: 216px;
+
+}
+
+#qwrap{
+	max-width: 60%;
+    margin: auto;
+}
+
+#tw{
+	width: 2%;
+    margin: 2%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0.2;
+}
