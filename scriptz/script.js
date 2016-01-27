@@ -2,12 +2,14 @@ var hour
 var min
 var n
 var res
+var p = document.getElementById("info");
+var p2 = document.getElementById("info2");
 
 function callRenderdate(){
      renderdate();
-setInterval(function(){
-        renderdate();
-}, 60000);
+    setInterval(function(){
+            renderdate();
+    }, 6000);
 }
 function renderdate(){
 	var date = new Date();
@@ -38,7 +40,7 @@ function renderdate(){
 
 	 n = weekday[date.getDay()];
 	//var formatdetdate = "Idag är det "+n +" och nu klockan är "+ hour +":"+ min;
-	var p = document.createElement("p")
+	
     p.textContent  ="";
 	p.textContent  = "Idag är det "+n +" och nu är klockan är "+ hour +":"+ min;
 
@@ -144,10 +146,11 @@ function renderResponse () {
 		}
 	}
 
-	var p2 = document.createElement("p")
+//	var p2 = document.createElement("p")
+    console.log(res)
 	p2.textContent  = res;
-
-	document.getElementById('respon').appendChild(p2);
+//
+//	document.getElementById('respon').appendChild(p2);
 
 	console.log(res)
 }
