@@ -39,6 +39,7 @@ function renderdate(){
 	 n = weekday[date.getDay()];
 	//var formatdetdate = "Idag är det "+n +" och nu klockan är "+ hour +":"+ min;
 	var p = document.createElement("p")
+    p.textContent  ="";
 	p.textContent  = "Idag är det "+n +" och nu är klockan är "+ hour +":"+ min;
 
 	document.getElementById('date').appendChild(p);
