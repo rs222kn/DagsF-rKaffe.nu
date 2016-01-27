@@ -2,6 +2,13 @@ var hour
 var min
 var n
 var res
+
+function callRenderdate(){
+     renderdate();
+setInterval(function(){
+        renderdate();
+}, 60000);
+}
 function renderdate(){
 	var date = new Date();
 	console.log( date.getHours().length)
@@ -143,4 +150,4 @@ function renderResponse () {
 
 	console.log(res)
 }
- window.onload = renderdate()
+ window.onload = callRenderdate()
