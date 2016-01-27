@@ -14,7 +14,7 @@ function renderdate(){
 		hour = prehour;
 	}
 	var premin =date.getMinutes();
-	if(premin.length == 1){
+	if(premin.length = 1){
 		min ="0"+ premin;
 	}
 	else{
@@ -76,12 +76,12 @@ function renderResponse () {
 			document.title = "Dags För Kaffe? Ja!";
 		}
 	}
-	if(n =="onsdag"){
+	if(n =="ondsdag"){
 		if(hour < 05){
 			res = "Nope! Det är torsdag imorgon, du kan ju gott försöka lägga dig i tid";
 			document.title = "Dags För Kaffe? Nej!";
 		}
-		else if(hour > 20 && min > 50){
+		else if(hour > 22 && min > 50){
 			res = "IRSIH COFFEE TIME!";
 			document.title = "Dags För Kaffe? Ja!";
 		}
@@ -109,7 +109,7 @@ function renderResponse () {
 		}
 	}
 	if(n =="fredag"){
-		if(hour == 13 && min > 40){
+		if(hour == 14 && min > 40){
 			res= "Japp! Tänk dock på att stina stänger om mnidre än 20!"
 			document.title = "Dags För Kaffe? Ja!";
 		}
@@ -125,9 +125,9 @@ function renderResponse () {
 			document.title = "Dags För Kaffe? Ja!";
 		
 	}
-	if(n == "söndag"){
-		if(hour > 22 && min > 50 || hour < 7){
-			res = "Gå och lägg dig istället du kommer vara fett nöjd imorgon";
+	if(n == "Söndag"){
+		if(hour > 22 && min > 50){
+			res = "Gå och lägg dig istället du kommer vara fett nöjd";
 			document.title = "Dags För Kaffe? Nej!";
 		}
 		else{

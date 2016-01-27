@@ -76,12 +76,12 @@ function renderResponse () {
 			document.title = "Dags För Kaffe? Ja!";
 		}
 	}
-	if(n =="onsdag"){
+	if(n =="ondsdag"){
 		if(hour < 05){
 			res = "Nope! Det är torsdag imorgon, du kan ju gott försöka lägga dig i tid";
 			document.title = "Dags För Kaffe? Nej!";
 		}
-		else if(hour > 20 && min > 50){
+		else if(hour > 22 && min > 50){
 			res = "IRSIH COFFEE TIME!";
 			document.title = "Dags För Kaffe? Ja!";
 		}
@@ -92,6 +92,7 @@ function renderResponse () {
 		else{
 			res = "Onsdagar kräver att man bottnar ordentligt! Vi vet alla att man hanterar sprit bätre om man har druckigt kaffe innan";
 			document.title = "Dags För Kaffe? Ja!";
+			console.log("hej")
 		}
 	}
 	if(n =="torsdag"){
@@ -109,7 +110,7 @@ function renderResponse () {
 		}
 	}
 	if(n =="fredag"){
-		if(hour == 13 && min > 40){
+		if(hour == 14 && min > 40){
 			res= "Japp! Tänk dock på att stina stänger om mnidre än 20!"
 			document.title = "Dags För Kaffe? Ja!";
 		}
