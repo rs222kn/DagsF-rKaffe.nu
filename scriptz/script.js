@@ -128,7 +128,7 @@ function renderResponse () {
 			document.title = "Dags För Kaffe? Ja!";
 		}
 	}
-	if(n =="lordag"){
+	if(n =="lördag"){
 		
 		
 			res = "Ditt lilla bakfulla helvete, idag har Stina stängt... Kämpa, jag tror på dig <3";
